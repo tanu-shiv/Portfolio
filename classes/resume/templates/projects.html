@@ -1,0 +1,138 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanvi Shivani's Projects</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.jpeg' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/projects.css' %}">
+</head>
+<body>
+    <nav id="navbar" class="flex s-between items-center">
+        <div class="left-nav">
+        </div>
+        <div class="right-nav">
+            <ul class="flex">
+                <li><a href="{% url 'home' %}" class="roboto active">Home</a></li>
+                <li><a href="{% url 'home' %}" class="roboto">About</a></li>
+                <li><a href="{% url 'home' %}" class="roboto">Skills</a></li>
+                <li><a href="{% url 'home' %}" class="roboto">Projects</a></li>
+                <li><a href="{% url 'home' %}" class="roboto">Education and Work</a></li>
+                <li><a href="{% url 'home' %}" class="roboto">Contact</a></li>
+            </ul>
+        </div>
+        <label for="check" class="checkBtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <input type="checkbox" id="check">
+    </nav>
+
+    <section id="project-list" class="flex f-col items-center">
+        <div class="projects-header flex f-col items-center">
+            <h2 class="my-2 t-black">My Latest <span class="t-yellow">Projects</span></h2>
+            <p class="t-gray">Explore some of my recent work, from web applications and data analysis to machine learning models. Each project is a testament to my skills in bringing creative ideas to life with code.</p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <!-- <div class="project-image">
+                    <img src="{% static 'images/project1.jpg' %}" alt="Beauty Product E-commerce App screenshot">
+                </div> -->
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="tag ui-ux">Python</span>
+                        <span class="tag app">NLP</span>
+                        <span class="tag app">Pyaudio</span>
+                        <span class="tag app">IndicNLP</span>
+                        <span class="tag app">Machine Translation</span>
+                    </div>
+                    <h3 class="t-black">Speech-to-text and translation system for Indian Regional Languages</h3>
+                    <p class="project-description t-gray">Developed a Python-based speech-to-text and translation
+system tailored for Indian languages with real-time processing. Integrated PyAudio for noise cancellation, SpeechRecognition
+for accurate transcription, and IndicNLP for seamless
+translation across multiple Indian languages.</p>
+                    <a href="https://github.com/tanu-shiv/Translation-system-for-Indian-languages" target="_blank" class="btn black">View on GitHub</a>
+                </div>
+            </div>
+            <!-- Project Card 1 -->
+            <div class="project-card">
+                <!-- <div class="project-image">
+                     <img src="{% static 'images/project1.jpg' %}" alt="Beauty Product E-commerce App screenshot">
+                </div> -->
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="tag ui-ux">Cybersecurity</span>
+                        <span class="tag app">Machine Learning</span>
+                    </div>
+                    <h3 class="t-black">Phishing and Malicious URL detection using Machine learning techniques</h3>
+                    <p class="project-description t-gray">This project uses machine learning to detect phishing and malicious URLs. It starts by using Principal Component Analysis (PCA) to simplify complex URL data. This simplified data is then fed into a Random Forest model, which accurately classifies URLs as either safe or malicious.</p>
+                    <a href="https://github.com/tanu-shiv/Phishing-and-Malware-url-detection-using-Machine-learning" target="_blank" class="btn black">View on GitHub</a>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="project-card">
+                <!-- <div class="project-image">
+                     <img src="{% static 'images/project2.jpg' %}" alt="Beauty Product Mobile Landing Page screenshot">
+                </div> -->
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="tag web">Web Development</span>
+                        <span class="tag wireframe">HTML</span>
+                        <span class="tag wireframe">CSS</span>
+                        <span class="tag wireframe">Django</span>
+                        <span class="tag wireframe">Python</span>
+                    </div>
+                    <h3 class="t-black">Portfolio Website</h3>
+                    <p class="project-description t-gray">This is a personal portfolio website built using the Django framework. The front end is crafted with HTML and styled with CSS to create a clean, responsive, and visually appealing user interface. The back end, powered by Django, handles dynamic content and a contact form, demonstrating my full-stack web development skills.</p>
+                    <a href="https://github.com/tanu-shiv/your-project-repo" target="_blank" class="btn black">View on GitHub</a>
+                </div>
+            </div>
+            
+            <!-- Project Card 3 -->
+            <div class="project-card">
+                <!-- <div class="project-image">
+                     <img src="{% static 'images/project3.jpg' %}" alt="Coffee Shop App screenshot"> 
+                </div> -->
+                <div class="project-info">
+                    <div class="project-tags">
+                        
+                        <span class="tag app">Machine Learning</span>
+                        <span class="tag app">Deep Learning</span>
+                        <span class="tag app">Computer Vision</span>
+                        <span class="tag app">Convolutional Neural Network(CNN)</span>
+                        <span class="tag app">Facial Recognition</span>
+                    </div>
+                    <h3 class="t-black">Emotion Detection using Machine Learning</h3>
+                    <p class="project-description t-gray">This project is a deep learning-based emotion detection system that uses a Convolutional Neural Network (CNN). The system is trained on facial images to classify emotions such as happy, sad, and angry. It can then be used to perform real-time emotion detection from a video stream, identifying and labeling the emotions of faces as they appear on screen. The project also includes a dedicated script for evaluating the model's performance using a test dataset.</p>
+                    <a href="https://github.com/tanu-shiv/Emotion-Detection-using-Machine-Learning/tree/main" target="_blank" class="btn black">View on GitHub</a>
+                </div>
+            </div>
+
+            <!-- Project Card 4 -->
+            <div class="project-card">
+                <!-- <div class="project-image">
+                    <img src="{% static 'images/project4.jpg' %}" alt="Coffee Shop Landing Page screenshot">
+                </div> -->
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="tag web">Web Design</span>
+                        <span class="tag wireframe">HTML</span>
+                        <span class="tag wireframe">CSS</span>
+                        <span class="tag wireframe">MySQL</span>
+                    </div>
+                    <h3 class="t-black">Restaurant E-commerce website</h3>
+                    <p class="project-description t-gray">This project is a functional e-commerce website for a restaurant. The front end is built using HTML for structure and CSS for styling, providing a clean and responsive user interface for an optimal browsing experience. It includes key features such as a menu, a photo gallery, and user authentication pages for sign-in and registration, with data managed by an SQL database to handle user and order information.</p>
+                    <a href="https://github.com/tanu-shiv/Ecommerce-website" target="_blank" class="btn black">View on GitHub</a>
+                </div>
+            </div>
+
+            <!-- You can add more project cards here following the same structure -->
+
+        </div>
+    </section>
+
+</body>
+</html>
